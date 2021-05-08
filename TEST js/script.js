@@ -402,72 +402,52 @@ let json = [
   }
 ]
 let letters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L","M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
-let random = getRandomInt(letters.length);
-let options = [];
+let option = [];
+
 
 do {
-	options.push(letters[getRandomInt(letters.length)]);
-} while (new Set(options).size < 5);
+	option.push(letters[getRandomInt(letters.length)]);
+} while (new Set(option).size < 5);
 
 
 
-let uniqueOptions = new Set(options)
+
+let uniqueOptions = new Set(option)
 console.log(uniqueOptions)
 
 
 
+
 for (let opt of uniqueOptions) {
-	let newOption = new Option(opt, opt);
+  function fun() {
+  arr=[]
+  for (let item in json) {
+    if (json[item]['name'][0] == opt){
+      arr.push(json[item]['name'])
+    }
+  }
+  return arr;
+}
+	let newOption = new Option(opt, fun());
   	gg.append(newOption);
   	console.log(newOption)
-}
-
-(function () {
-    var logger = document.getElementById('d');
-    var old_log = console.log;
-    console.log = function (message) {
-            logger.innerHTML += message + '<br />';
-    }
-})();
-
-function fun(){
-	var sel=document.getElementById('gg').selectedIndex;
-  	var options=document.getElementById('gg').options;
-  	arr=[]
-  	for (let item in json){		
-			if (json[item]['name'][0] == options[sel].text){
-				console.log(json[item]['name']);
-				arr.push(json[item]['name']);
-				}
-
-				}
-
-			}
-
-function fun3(){
-	var sel=document.getElementById('gg').selectedIndex;
-  	var options=document.getElementById('gg').options;
-  	arr=[]
-  	for (let item in json){		
-			if (json[item]['name'][0] == options[sel].text){
-				arr.push(json[item]['name']);
-				return arr.length
-				}
-
-				}
-
-			}
-				
-function fun2() {					
-	if(fun3() < 1){
-		alert("dsads")
-		return false
-	}else {
-		return fun()
-	}
 
 }
-								
+
+
+
+function  fun2(){
+  var sel=document.getElementById('gg').selectedIndex;
+  var options=document.getElementById('gg').options;
+  var elem=options[sel].value;
+  document.getElementById("out").innerHTML = elem; 
+  if (elem == false) {
+    alert("No matches result");
+  }
+}
+
+
+	
 				
 
 
