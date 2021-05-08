@@ -369,15 +369,17 @@ body{
 	z-index: 10;
 	width: 52px;
 	height: 52px;
-	margin: 0 12px;
 	font-size: 0;
+	margin-left: 1%;
+	margin-right: 1%;
+
 }
 .slick-arrow.slick-prev{
 	left: 0;
 	background: url('../img/arrow_l.png') 0 0 no-repeat;
 }
 .slick-arrow.slick-next{
-	right: -4.8%;
+	right: -4%;
 	background: url('../img/arrow_r.png') 0 0 no-repeat;
 }
 .slider .slick-arrow:active{
