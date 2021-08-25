@@ -2762,7 +2762,7 @@ img.mainbg2 {
   position: absolute;
   left: 0;
   top: 60%;
-  z-index: 100;
+  z-index: 6;
 }
 
 .first-part img.right {
@@ -3051,6 +3051,8 @@ img.mainbg2 {
 
 .swiper-container.two {
   height: 480px;
+  position: relative;
+  overflow: hidden;
 }
 
 .swiper-container.two .swiper-slide {
