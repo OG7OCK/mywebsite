@@ -155,10 +155,16 @@ function testWebP(callback) {
     const slides = document.querySelectorAll('.slide'),
           prev = document.querySelectorAll('.arrows__prev'),
           next = document.querySelectorAll('.arrows__next'),
-          counter = document.querySelectorAll('.arrows__number');
-          offer = document.querySelector('.offer-trigger');
-          offerArrow = offer.querySelector('.slider-menu-mob-arrow');
+          counter = document.querySelectorAll('.arrows__number'),
+          sliderMenu = document.querySelector('.slider-menu'),
+          sliderMenuMob = document.querySelector('.slider-menu-mob'),
+          offerMob = sliderMenuMob.querySelector('.offer-trigger'),
+          offer = sliderMenu.querySelector('.offer-trigger'),
+          offerArrow = offer.querySelector('.slider-menu-mob-arrow'),
+          offerArrowMob = offerMob.querySelector('.slider-menu-mob-arrow'),
           menuList = document.querySelector('.submenu');
+
+
 
 offer.addEventListener('click', function() {
     offer.classList.toggle('openlist');
@@ -170,6 +176,19 @@ offer.addEventListener('click', function() {
         menuList.style.display = 'none';
     }
 })
+
+offerMob.addEventListener('click', function() {
+    offerMob.classList.toggle('openlist');
+    if (offerMob.classList.contains('openlist')) {
+        offerArrowMob.style.transform = 'rotate(225deg)';
+        menuList.style.display = 'block';
+    } else {
+        offerArrowMob.style.transform = 'rotate(45deg)';
+        menuList.style.display = 'none';
+    }
+})
+
+
 
     let slideIndex = 0;
     counter1(slideIndex, slides.length)
@@ -225,6 +244,7 @@ const slider2__slides = Array.from(document.querySelectorAll('.slider-2__slider-
       slider2__field = document.querySelector('.slider-2__wrapper-field'),
       slider2__wrapperWidth = window.getComputedStyle(slider2__slides[0]).width;
 
+      console.log(slider2__wrapperWidth)
 let offset = 0;
 slider2__field.style.width = `${Math.round(slider2__wrapperWidth.slice(0, slider2__wrapperWidth.length - 2)) * (slider2__slides.length)} +'px'`;
 slider2__next.addEventListener('click', () => {
