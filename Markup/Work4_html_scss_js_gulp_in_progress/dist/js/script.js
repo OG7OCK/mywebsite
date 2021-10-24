@@ -244,7 +244,7 @@ const slider2__slides = Array.from(document.querySelectorAll('.slider-2__slider-
       slider2__field = document.querySelector('.slider-2__wrapper-field'),
       slider2__wrapperWidth = window.getComputedStyle(slider2__slides[0]).width;
 
-      console.log(slider2__wrapperWidth)
+
 let offset = 0;
 slider2__field.style.width = `${Math.round(slider2__wrapperWidth.slice(0, slider2__wrapperWidth.length - 2)) * (slider2__slides.length)} +'px'`;
 slider2__next.addEventListener('click', () => {
@@ -266,6 +266,7 @@ slider2__prev.addEventListener('click', () => {
     }
     moveSlide(offset)
 });
+
 
 function moveSlide(offset) {
     slider2__field.style.transform = `translateX(-${offset}px)`;
@@ -613,6 +614,48 @@ slider4__navlinks.forEach((item, i) => {
         slider4__sliders[i].classList.add('showslider');
         })
     })
+})
+
+
+//slider-5
+
+const slider5__slides = Array.from(document.querySelectorAll('.slider-5__item')),
+      slider5__field = document.querySelector('.slider-5__field'),
+      slider5__wrapperWidth = window.getComputedStyle(slider5__slides[0]).width;
+
+
+let offset5 = 0;
+let start = 0;
+let move = 0;
+slider5__field.style.width = `${Math.round(slider5__wrapperWidth.slice(0, slider5__wrapperWidth.length - 2)) * (slider5__slides.length)} +'px'`;
+
+function moveSlide5(offset5) {
+    slider5__field.style.transform = `translateX(-${offset5}px)`;
+    slider5__field.style.transition = 'all 1s ease-in-out';
+}
+
+slider5__field.addEventListener('touchstart', (e) => {
+    start = e.touches[0].clientX
+    console.log(start)
+    console.log(slider5__field.style.width)
+})
+
+slider5__field.addEventListener('touchmove', (e) => {
+    move = e.touches[0].clientX
+    if (move < start) {
+        offset5 += (start - move);
+    } else if (move > start) {
+        offset5 -= (move - start);
+    }
+
+    if (offset5 < 0) {
+        offset5 = 0
+    } else if (offset5 > 2331) {
+        offset5 = 2331
+    }
+
+    console.log(offset5)
+    moveSlide5(offset5)
 })
 
 
