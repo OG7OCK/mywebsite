@@ -1,0 +1,137 @@
+{
+  "menu": [
+    {
+      "img": "img/tabs/vegy.jpg",
+      "altimg": "vegy",
+      "title": "Меню 'Фитнес'",
+      "descr": "Меню 'Фитнес' - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Продукт активных и здоровых людей. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!",
+      "price": 9
+    },
+    {
+      "img": "img/tabs/post.jpg",
+      "altimg": "post",
+      "title": "Меню 'Постное'",
+      "descr": "Меню 'Постное' - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения, молоко из миндаля, овса, кокоса или гречки, правильное количество белков за счет тофу и импортных вегетарианских стейков.",
+      "price": 14
+    },
+    {
+      "img": "img/tabs/elite.jpg",
+      "altimg": "elite",
+      "title": "Меню 'Премиум'",
+      "descr": "В меню 'Премиум' мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!",
+      "price": 21
+    }
+  ],
+  "requests": [
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 1
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 2
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 3
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 4
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 5
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 6
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 7
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 8
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "0931832098",
+      "id": 9
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "0931832098",
+      "id": 10
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 11
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 12
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 13
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 14
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 15
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 16
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 17
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 18
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 19
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 20
+    },
+    {
+      "name": "Oleksandr Bielik",
+      "phone": "+38 (093) 183 20 98",
+      "id": 21
+    },
+    {
+      "name": "2323423",
+      "phone": "+38 (093) 183 20 98",
+      "id": 22
+    }
+  ]
+}
