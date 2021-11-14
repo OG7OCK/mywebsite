@@ -464,17 +464,11 @@ slider4__sliders.forEach((item,i) => {
     let slider4__wrapperWidth = "288px";
     let offset4 = 0;
     let arrowdot4 = [];
-    setInterval(function() {
-        if (offset4 == Math.round(+slider4__wrapperWidth.slice(0, slider4__wrapperWidth.length - 2)) * (slider4__slides.length - 4)) {
-            offset4 = 0;
-            arrowdot4.length = 0;
-        } else {
-            offset4 += Math.round(+slider4__wrapperWidth.slice(0, slider4__wrapperWidth.length - 2))
-            arrowdot4.length +=1
-        }
-        dotActive4(arrowdot4.length)
-        moveSlide4(offset4)
-    }, 2000)
+
+
+
+
+
 
     slider4__slides.forEach((item) => {
         let pcs = 1;
@@ -627,6 +621,7 @@ const slider5__slides = Array.from(document.querySelectorAll('.slider-5__item'))
 let offset5 = 0;
 let start = 0;
 let move = 0;
+let end = 0;
 slider5__field.style.width = `${Math.round(slider5__wrapperWidth.slice(0, slider5__wrapperWidth.length - 2)) * (slider5__slides.length)} +'px'`;
 
 function moveSlide5(offset5) {
@@ -637,25 +632,15 @@ function moveSlide5(offset5) {
 slider5__field.addEventListener('touchstart', (e) => {
     start = e.touches[0].clientX
     console.log(start)
-    console.log(slider5__field.style.width)
 })
 
 slider5__field.addEventListener('touchmove', (e) => {
     move = e.touches[0].clientX
-    if (move < start) {
-        offset5 += (start - move);
-    } else if (move > start) {
-        offset5 -= (move - start);
-    }
+})
 
-    if (offset5 < 0) {
-        offset5 = 0
-    } else if (offset5 > 2331) {
-        offset5 = 2331
-    }
-
-    console.log(offset5)
-    moveSlide5(offset5)
+slider5__field.addEventListener('touchend', (e) => {
+    end = e.touches[0].clientX
+    console.log(end)
 })
 
 
