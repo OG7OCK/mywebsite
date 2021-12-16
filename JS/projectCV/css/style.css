@@ -80,6 +80,7 @@ body {
     font-size: 20px;
     padding: 20px 0;
     color: rgb(221, 221, 221);
+    cursor: pointer;
 }
 .cv__left-block h2 {
     text-transform: uppercase;
