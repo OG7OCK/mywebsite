@@ -63,12 +63,6 @@ function slider(slideBlocks, dotBlocks) {
 
 }
 
-//setInterval(autoSwipe, 3000)
-
-
-
-
-
 
 //progressLine
 
@@ -81,7 +75,7 @@ const skills = {
     js: "70%",
     photoshop: "45%",
     gulp: "45%",
-    xml: "60%",
+    xml: "40%",
     teamwork: "90%",
     responsibility: "100%",
     selfmotivated: "100%",
@@ -116,19 +110,3 @@ cvLeftBlocks.forEach(item => {
 
 })
 
-
-//popup
-
-const popup = document.querySelector('.popup');
-const popupClose = popup.querySelector('.popup__close')
-popup.addEventListener('click', (e) => {
-    if (e.target == popup || e.target == popupClose) {
-        popup.style.display = 'none';
-    }
-})
-
-function popupOn() {
-    popup.style.display = 'flex';
-}
-
-setTimeout(popupOn, 5000)
