@@ -393,6 +393,12 @@ body {
      flex-direction: column;
  }
  .cv__left-block {
-    height: 2400px;
+    height: 2500px;
 }
 }
+
+@media (max-width:340px){
+    .cv__left-block {
+       height: 2700px;
+   }
+   }
