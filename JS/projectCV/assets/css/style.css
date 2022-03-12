@@ -17,53 +17,14 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 body {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
     font-family: Arial Narrow, sans-serif;
-}
-
-.cv {
-    display: flex;
     width: 100%;
     max-width: 1024px;
-    height: 1024px;
+    height: 1100px;
     position: relative;
 }
 
-.popup {
-    width: 100%;
-    height: 100%;
-    background-color: rgb(59, 59, 59, 0.3);
-    position: absolute;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
-}
-.popup__wrapper {
-    width: 50%;
-    height: 50%;
-    background-color: rgb(240, 224, 204);
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.popup__wrapper li{
-    font-size: 40px;
-
-}
-.popup__close {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(59, 59, 59);
-    color: rgb(240, 224, 204);
-    position: absolute;
-    right: 0;
-    top: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 .cv__left-block {
     background-color: rgb(59, 59, 59);
@@ -82,6 +43,7 @@ body {
     font-size: 20px;
     padding: 20px 0;
     color: rgb(221, 221, 221);
+    cursor: pointer;
 }
 .cv__left-block h2 {
     text-transform: uppercase;
@@ -421,6 +383,9 @@ body {
     .cv__left-block .contacts {
         display: block;
     }
+    .popup__wrapper li {
+        font-size: 20px;
+    }
 }
 
 @media (max-width:380px){
@@ -428,6 +393,15 @@ body {
      flex-direction: column;
  }
  .cv__left-block {
-    height: 2300px;
+    height: 2500px;
 }
 }
+
+@media (max-width:340px){
+    .cv__left-block {
+       height: 2700px;
+   }
+   .cv__left-block .hobbies {
+    display: none;
+}
+   }
