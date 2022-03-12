@@ -401,4 +401,7 @@ body {
     .cv__left-block {
        height: 2700px;
    }
+   .cv__left-block .hobbies {
+    display: none;
+}
    }
