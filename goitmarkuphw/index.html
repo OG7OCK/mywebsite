@@ -1,112 +1,312 @@
 <!DOCTYPE html>
-
-<html lang="ru">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Компания по созданию вебприложений" />
-        <title>WebStudio</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="/"><span>Web</span>Studio</a></li>
-                    <li><a href="#">Студия</a></li>
-                    <li><a href="#">Портфолио</a></li>
-                    <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="contacts">
-                <ul>
-                    <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-                </ul>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>CV</title>
+</head>
+<body>
+  <aside class="cv__left-block">
+    <section class="left-block photo">
+      <img src="img/111.jpg" alt="">
+      <img src="img/222.jpg" alt="">
+      <img src="img/333.jpg" alt="">
+      <div class="dots"></div>
+    </section>
+    <header class="left-block header">
+      <div class="name">
+        <h3>Bielik</h3>
+        <h3>Oleksandr</h3>
+        <h4>Junior Frontend Developer</h4>
+      </div>
+    </header>
+    <section class="left-block about">
+      <h2>about me</h2>
+      <div class="description">
+        <p>I want to try myself in the IT field, as I really like coding, and constantly learn something new. I learned Python from the very beginning. But then I faced HTML and it started ... In the near future I plan to learn React</p>
+      </div>
+    </section>
+    <section class="left-block work-experience">
+      <h2>work-experience</h2>
+      <div class="description">
+	      <div class="description__company">
+          <h3>LLC SOUTH CARDBOARD UKRAINE - <span>Planning department</span></h3>
+          <h4>Mykolaiv</h4>
+          <h3>March 2015 - June 2021</h3>
+        </div>
+        <div class="description__company">
+          <h3>TrackEnsure inc. - <span>Data specialist</span></h3>
+          <h4>Mykolaiv</h4>
+          <h3>June 2021 - ...</h3>
+        </div>
+        <div class="description__company">
+          <h3>Learning HTML/CSS and JavaScript</h3>
+          <h4>Mykolaiv</h4>
+          <h3>January 2021 - ...</h3>
+        </div>
+      </div>
+    </section>
+    <section class="left-block education">
+      <h2>education</h2>
+      <div class="description">
+        <div class="description__company">
+          <h3>National Shipbuilding University - <span>Specialist of finance and credit</span></h3>
+          <h4>Mykolaiv</h4>
+          <h3>2012 - 2016</h3>
+        </div>
+        <div class="description__company">
+          <h3>Udemy.com - <span>Java-script(basic), Java-script(advanced), React</span></h3>
+          <h4>Online</h4>
+          <h3>January 2021 - January 2022</h3>
+        </div>
+      </div>
+    </section>
+    <section class="left-block skills">
+      <h2>Skills</h2>
+      <div class="description">
+        <div class="description__skills">
+          <div class="progress-block">
+            <h1>HTML/CSS(SCSS)</h1>
+            <div class="progress-background">
+              <div class="progress-line html"></div>
             </div>
-        </header>
-        <main>
-            <section>
-                <h1>Эффективные решения для вашего бизнеса</h1>
-                <button type="button">Заказать услугу</button>
-            </section>
-            <section>
-                <ul>
-                    <li>
-                        <h3>Внимание к деталям</h3>
-                        <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
-                    </li>
-                    <li>
-                        <h3>Пунктуальность</h3>
-                        <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
-                    </li>
-                    <li>
-                        <h3>Планирование</h3>
-                        <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
-                    </li>
-                    <li>
-                        <h3>Современные технологии</h3>
-                        <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
-                    </li>
-                </ul>
-            </section>
-            <section>
-                <h2>Чем мы занимаемся</h2>
-                <ul>
-                    <li><a href="#"><img src="images/li_item1.jpg" alt="Разрабатываем приложения с 0" width="370"> </a></li>
-                    <li><a href="#"><img src="images/li_item2.jpg" alt="Адаптируем приложения под любые мобильные устройства" width="370"> </a></li>
-                    <li><a href="#"><img src="images/li_item3.jpg" alt="Адаптируем приложения под любые тачпад устройства" width="370"> </a></li>
-                </ul>
-            </section>
-            <section>
-                <h2>Наша команда</h2>
-                <ul>
-                    <li>
-                        <figure>
-                            <img src="images/designer.jpg" alt="Дизайнер" width="270">
-                            <figcaption>
-                                <p>Игорь Демьяненко</p>
-                                <p><span>Product Designer</span></p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="images/frontend.jpg" alt="Фронтенд разработчик" width="270">
-                            <figcaption>
-                                <p>Ольга Репина</p>
-                                <p><span>Frontend Developer</span></p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="images/marketing.jpg" alt="Маркетолог" width="270">
-                            <figcaption>
-                                <p>Николай Тарасов</p>
-                                <p><span>Marketing</span></p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                    <li>
-                        <figure>
-                            <img src="images/ui_designer.jpg" alt="Дизайнер" width="270">
-                            <figcaption>
-                                <p>Михаил Ермаков</p>
-                                <p><span>UI Designer</span></p>
-                            </figcaption>
-                        </figure>
-                    </li>
-                </ul>
-            </section>
-        </main>
-        <footer>
-            <ul>
-                <li><a href="/"><span>Web</span>Studio</a></li>
-                <li><address>г. Киев, пр-т Леси Украинки, 26</address></li>
-                <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            </ul>
-        </footer>
-    </body>
+          </div>
+          <div class="progress-block">
+            <h1>Java-script</h1>
+            <div class="progress-background">
+              <div class="progress-line js"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>Figma/Photoshop</h1>
+            <div class="progress-background">
+              <div class="progress-line photoshop"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>Redux</h1>
+            <div class="progress-background">
+              <div class="progress-line gulp"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>React</h1>
+            <div class="progress-background">
+              <div class="progress-line xml"></div>
+            </div>
+          </div>
+        </div>
+        <div class="description__skills">
+          <div class="progress-block">
+            <h1>Teamwork</h1>
+            <div class="progress-background">
+              <div class="progress-line teamwork"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>responsibility</h1>
+            <div class="progress-background">
+              <div class="progress-line responsibility"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>self-motivated</h1>
+            <div class="progress-background">
+              <div class="progress-line selfmotivated"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>able to learn</h1>
+            <div class="progress-background">
+              <div class="progress-line abletolearn"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>able to relocate</h1>
+            <div class="progress-background">
+              <div class="progress-line abletorelocate"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="left-block social-links">
+      <h2>social links</h2>
+      <div class="description">
+        <h3>Facebook</h3>
+        <a href="https://uk-ua.facebook.com/oleksandr.bielik.35">facebook.com/oleksandr.bielik.35</a>
+        <h3>Instagram</h3>
+        <a href="https://www.instagram.com/sasha_bielik/">instagram.com/sasha_bielik</a>
+      </div>
+    </section>
+    <section class="left-block github-links">
+      <h2>github-links</h2>
+      <div class="description">
+        <a href="https://github.com/OG7OCK/mywebsite/tree/main/JS_files" target="_blank">GITHUB<=(check my code)</a>
+        <a href="https://og7ock.github.io/mywebsite/Markup/projectFloor/" target="_blank">[Markup]projectFloor</a>
+        <a href="https://og7ock.github.io/mywebsite/Markup/projectHeat/" target="_blank">[Markup]projectHeat</a>
+        <a href="https://og7ock.github.io/mywebsite/JS/projectCV/" target="_blank">[Markup+JS]projectCV</a>
+        <a href="https://og7ock.github.io/mywebsite/JS/projectFitness/" target="_blank">[JS]projectFitness</a>
+        <a href="https://og7ock.github.io/mywebsite/JS/projectWindow/" target="_blank">[JS]projectWindow</a>
+        <a href="https://og7ock.github.io/mywebsite/JS/projectPictures/" target="_blank">[JS]projectPictures</a>
+        <a href="https://og7ock.github.io/mywebsite/JS/projectLoan/index.html" target="_blank">[JS]projectLoan(main)</a>
+        <a href="https://og7ock.github.io/mywebsite/JS/projectLoan/modules.html" target="_blank">[JS]projectLoan(modules)</a>
+        <a href="https://og7ock.github.io/mywebsite/React/projectList/" target="_blank">[React]projectList</a>
+	<a href="https://og7ock.github.io/mywebsite/React/projectMarvel/" target="_blank">[React]projectMarvel</a>
+      </div>
+    </section>
+    <section class="left-block languages">
+      <h2>languages</h2>
+      <div class="description">
+        <ul>
+          <li>English - Intermediate</li>
+          <li>Russian - Upper-Intermediate</li>
+          <li>Ukrainian - Intermediate</li>
+        </ul>
+      </div>
+    </section>
+    <section class="left-block hobbies">
+      <h2>hobbies</h2>
+      <div class="description">
+        <ul>
+          <li>Sports</li>
+          <li>Books</li>
+        </ul>
+      </div>
+    </section>
+    <section class="left-block contacts">
+      <h2>contacts</h2>
+      <div class="description">
+        <ul>
+          <li>Dalya 54/1, Mykolaiv, UA</li>
+          <li>+380(93)-183-20-98</li>
+          <li>og7ock@gmail.com</li>
+        </ul>
+      </div>
+    </section>
+  </aside>
+  <main class="cv__right-block">
+    <header class="right-block header">
+      <div class="name">
+        <h3>Bielik</h3>
+        <h3>Oleksandr</h3>
+        <h4>Junior Frontend Developer</h4>
+      </div>
+      <address class="contacts">
+        <ul>
+          <li>Dalya 54/1, Mykolaiv, UA</li>
+          <li>+380(93)-183-20-98</li>
+          <li>og7ock@gmail.com</li>
+        </ul>
+      </address>
+    </header>
+    <section class="right-block work-experience">
+      <h2>work-experience</h2>
+      <div class="description">
+        <div class="description__company">
+          <h3>LLC SOUTH CARDBOARD UKRAINE - <span>Planning department</span></h3>
+          <h4>Mykolaiv</h4>
+          <h3>March 2015 - June 2021</h3>
+        </div>
+        <div class="description__company">
+          <h3>TrackEnsure inc. - <span>Data specialist</span></h3>
+          <h4>Mykolaiv</h4>
+          <h3>June 2021 - ...</h3>
+        </div>
+        <div class="description__company">
+          <h3>Learning HTML/CSS and JavaScript</h3>
+          <h4>Mykolaiv</h4>
+          <h3>January 2021 - ...</h3>
+        </div>
+      </div>
+    </section>
+    <section class="right-block education">
+      <h2>education</h2>
+      <div class="description">
+        <div class="description__company">
+          <h3>National Shipbuilding University - <span>Specialist of finance and credit</span></h3>
+          <h4>Mykolaiv</h4>
+          <h3>2012 - 2016</h3>
+        </div>
+        <div class="description__company">
+          <h3>Udemy.com - <span>Java-script(basic), Java-script(advanced), React</span></h3>
+          <h4>Online</h4>
+          <h3>January 2021 - January 2022</h3>
+        </div>
+      </div>
+    </section>
+    <section class="right-block skills">
+      <h2>Skills</h2>
+      <div class="description">
+        <div class="description__skills">
+          <div class="progress-block">
+            <h1>HTML/CSS(SCSS)</h1>
+            <div class="progress-background">
+              <div class="progress-line html"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>Java-script</h1>
+            <div class="progress-background">
+              <div class="progress-line js"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>Figma/Photoshop</h1>
+            <div class="progress-background">
+              <div class="progress-line photoshop"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>Redux</h1>
+            <div class="progress-background">
+              <div class="progress-line gulp"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>React</h1>
+            <div class="progress-background">
+              <div class="progress-line xml"></div>
+            </div>
+          </div>
+        </div>
+        <div class="description__skills">
+          <div class="progress-block">
+            <h1>Teamwork</h1>
+            <div class="progress-background">
+              <div class="progress-line teamwork"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>responsibility</h1>
+            <div class="progress-background">
+              <div class="progress-line responsibility"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>self-motivated</h1>
+            <div class="progress-background">
+              <div class="progress-line selfmotivated"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>able to learn</h1>
+            <div class="progress-background">
+              <div class="progress-line abletolearn"></div>
+            </div>
+          </div>
+          <div class="progress-block">
+            <h1>able to relocate</h1>
+            <div class="progress-background">
+              <div class="progress-line abletorelocate"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
 </html>
